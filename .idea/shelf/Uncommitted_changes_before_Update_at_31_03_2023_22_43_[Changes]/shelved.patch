@@ -1,0 +1,3933 @@
+Index: Lista1/Exercicio27/Exercicio27.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio27/Exercicio27.iml b/Lista1/Exercicio27/Exercicio27.iml
+new file mode 100644
+--- /dev/null	(date 1676463673062)
++++ b/Lista1/Exercicio27/Exercicio27.iml	(date 1676463673062)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista1/Exercicio31/Exercicio31.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio31/Exercicio31.iml b/Lista1/Exercicio31/Exercicio31.iml
+new file mode 100644
+--- /dev/null	(date 1676463687549)
++++ b/Lista1/Exercicio31/Exercicio31.iml	(date 1676463687549)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista3/Algoritmo 483/Algoritmo 483/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 483/Algoritmo 483/src/Main.java b/Lista3/Algoritmo 483/Algoritmo 483/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1680289854000)
++++ b/Lista3/Algoritmo 483/Algoritmo 483/src/Main.java	(date 1680289854000)
+@@ -0,0 +1,31 @@
++import java.util.Scanner;
++
++public class Main {
++    public static void main(String[] args) {
++        int L, c, aux;
++        int[] num = new int[4];
++        int[] num1 = new int[4];
++        Scanner sc = new Scanner(System.in);
++
++        for (L = 0; L < 4; L++) {
++            System.out.printf("\n\nDigite 1 numero %d: ", L + 1);
++            num[L] = sc.nextInt();
++        }
++
++        for (L = 0; L < 4; L++) {
++            System.out.printf("\n\nDigite 2 numero %d: ", L + 1);
++            num1[L] = sc.nextInt();
++        }
++
++        c = Algoritmo483.produtointerno(num, num1, 4);
++        System.out.printf("\nVETOR A\tVETOR B\n");
++
++        for (L = 0; L < 4; L++) {
++            System.out.printf("%d\t%d\n", num[L], num1[L]);
++        }
++
++        System.out.printf("\n\nproduto interno: %d\n", c);
++    }
++}
++
++
+Index: Lista3/Algoritmo 483/Algoritmo 483/src/Algoritmo483.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 483/Algoritmo 483/src/Algoritmo483.java b/Lista3/Algoritmo 483/Algoritmo 483/src/Algoritmo483.java
+new file mode 100644
+--- /dev/null	(date 1680289602000)
++++ b/Lista3/Algoritmo 483/Algoritmo 483/src/Algoritmo483.java	(date 1680289602000)
+@@ -0,0 +1,9 @@
++public class Algoritmo483 {
++    public static int produtointerno(int[] vetl, int[] vet2, int quant) {
++        int prod = 0;
++        for(int i = 0; i < quant; i++) {
++            prod += (vetl[i] * vet2[i]);
++        }
++        return prod;
++    }
++}
+Index: Lista3/Algoritmo 483/Algoritmo 483/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 483/Algoritmo 483/.gitignore b/Lista3/Algoritmo 483/Algoritmo 483/.gitignore
+new file mode 100644
+--- /dev/null	(date 1680289260000)
++++ b/Lista3/Algoritmo 483/Algoritmo 483/.gitignore	(date 1680289260000)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: Lista3/Algoritmo 483/Algoritmo 483/Algoritmo 483.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 483/Algoritmo 483/Algoritmo 483.iml b/Lista3/Algoritmo 483/Algoritmo 483/Algoritmo 483.iml
+new file mode 100644
+--- /dev/null	(date 1680289262000)
++++ b/Lista3/Algoritmo 483/Algoritmo 483/Algoritmo 483.iml	(date 1680289262000)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista1/Exercicio40/Exercicio40.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio40/Exercicio40.iml b/Lista1/Exercicio40/Exercicio40.iml
+new file mode 100644
+--- /dev/null	(date 1676463764300)
++++ b/Lista1/Exercicio40/Exercicio40.iml	(date 1676463764300)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista1/Exercicio41/Exercicio41.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio41/Exercicio41.iml b/Lista1/Exercicio41/Exercicio41.iml
+new file mode 100644
+--- /dev/null	(date 1676463764315)
++++ b/Lista1/Exercicio41/Exercicio41.iml	(date 1676463764315)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista1/Exercicio42/Exercicio42.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio42/Exercicio42.iml b/Lista1/Exercicio42/Exercicio42.iml
+new file mode 100644
+--- /dev/null	(date 1676463764347)
++++ b/Lista1/Exercicio42/Exercicio42.iml	(date 1676463764347)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista3/Algoritimo 465/Algoritimo 465/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritimo 465/Algoritimo 465/src/Main.java b/Lista3/Algoritimo 465/Algoritimo 465/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1680287640000)
++++ b/Lista3/Algoritimo 465/Algoritimo 465/src/Main.java	(date 1680287640000)
+@@ -0,0 +1,15 @@
++import java.util.Scanner;
++
++public class Main {
++    public static void main(String[] args) {
++
++        int num1, num2;
++        Scanner sc = new Scanner(System.in );
++        System.out.println("Digite o numero 1:");
++        num1 = sc.nextInt();
++        System.out.println("Digite o numero 2:");
++        num2 = sc.nextInt();
++
++        Algoritimo465.verificaMaiorNumero(num1, num2);
++    }
++}
+\ No newline at end of file
+Index: Lista1/Exercicio43/Exercicio43.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio43/Exercicio43.iml b/Lista1/Exercicio43/Exercicio43.iml
+new file mode 100644
+--- /dev/null	(date 1676463764362)
++++ b/Lista1/Exercicio43/Exercicio43.iml	(date 1676463764362)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista3/Algoritimo 465/Algoritimo 465/src/Algoritimo465.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritimo 465/Algoritimo 465/src/Algoritimo465.java b/Lista3/Algoritimo 465/Algoritimo 465/src/Algoritimo465.java
+new file mode 100644
+--- /dev/null	(date 1680287640000)
++++ b/Lista3/Algoritimo 465/Algoritimo 465/src/Algoritimo465.java	(date 1680287640000)
+@@ -0,0 +1,11 @@
++public class Algoritimo465 {
++    public static void verificaMaiorNumero(int num1, int num2) {
++        if (num1 > num2) {
++            System.out.println("O número " + num1 + " é maior que " + num2);
++        } else {
++            System.out.println("O número " + num2 + " é maior que " + num1);
++        }
++
++
++    }
++}
+Index: Lista3/Algoritimo 465/Algoritimo 465/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritimo 465/Algoritimo 465/.gitignore b/Lista3/Algoritimo 465/Algoritimo 465/.gitignore
+new file mode 100644
+--- /dev/null	(date 1680287596000)
++++ b/Lista3/Algoritimo 465/Algoritimo 465/.gitignore	(date 1680287596000)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: Lista3/Algoritimo 465/Algoritimo 465/Algoritimo 465.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritimo 465/Algoritimo 465/Algoritimo 465.iml b/Lista3/Algoritimo 465/Algoritimo 465/Algoritimo 465.iml
+new file mode 100644
+--- /dev/null	(date 1680287598000)
++++ b/Lista3/Algoritimo 465/Algoritimo 465/Algoritimo 465.iml	(date 1680287598000)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista3/Algoritmo 485/Algoritmo 485/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 485/Algoritmo 485/src/Main.java b/Lista3/Algoritmo 485/Algoritmo 485/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1680290118000)
++++ b/Lista3/Algoritmo 485/Algoritmo 485/src/Main.java	(date 1680290118000)
+@@ -0,0 +1,21 @@
++import java.util.Scanner;
++
++public class Main {
++    public static void main(String[] args) {
++        int[] num = new int[6];
++        String[] num1 = new String[6];
++        Scanner sc = new Scanner(System.in);
++
++        for (int i = 0; i < 6; i++) {
++            System.out.print("Digite numero " + i + ": ");
++            num[i] = sc.nextInt();
++        }
++
++        for (int i = 0; i < 6; i++) {
++            System.out.print("Digite caractere " + (i + 1) + ": ");
++            num1[i] = sc.next();
++        }
++
++        Algoritmo485.multivetor(num, num1, 6);
++    }
++}
+\ No newline at end of file
+Index: Lista3/Algoritmo 485/Algoritmo 485/src/Algoritmo485.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 485/Algoritmo 485/src/Algoritmo485.java b/Lista3/Algoritmo 485/Algoritmo 485/src/Algoritmo485.java
+new file mode 100644
+--- /dev/null	(date 1680290074000)
++++ b/Lista3/Algoritmo 485/Algoritmo 485/src/Algoritmo485.java	(date 1680290074000)
+@@ -0,0 +1,11 @@
++public class Algoritmo485 {
++    static void multivetor(int[] vetl, String[] vet2, int tam) {
++        for (int i = 0; i < tam; i++) {
++            System.out.println();
++            for (int w = 0; w < vetl[i]; w++) {
++                System.out.print(vet2[i]);
++            }
++        }
++        System.out.println();
++    }
++}
+Index: Lista3/Algoritmo 485/Algoritmo 485/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 485/Algoritmo 485/.gitignore b/Lista3/Algoritmo 485/Algoritmo 485/.gitignore
+new file mode 100644
+--- /dev/null	(date 1680290038000)
++++ b/Lista3/Algoritmo 485/Algoritmo 485/.gitignore	(date 1680290038000)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: Lista3/Algoritmo 485/Algoritmo 485/Algoritmo 485.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 485/Algoritmo 485/Algoritmo 485.iml b/Lista3/Algoritmo 485/Algoritmo 485/Algoritmo 485.iml
+new file mode 100644
+--- /dev/null	(date 1680290040000)
++++ b/Lista3/Algoritmo 485/Algoritmo 485/Algoritmo 485.iml	(date 1680290040000)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista1/Exercicio44/Exercicio44.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio44/Exercicio44.iml b/Lista1/Exercicio44/Exercicio44.iml
+new file mode 100644
+--- /dev/null	(date 1676463764378)
++++ b/Lista1/Exercicio44/Exercicio44.iml	(date 1676463764378)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista1/Exercicio46/Exercicio46.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio46/Exercicio46.iml b/Lista1/Exercicio46/Exercicio46.iml
+new file mode 100644
+--- /dev/null	(date 1676463809078)
++++ b/Lista1/Exercicio46/Exercicio46.iml	(date 1676463809078)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista1/Exercicio48/Exercicio48.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio48/Exercicio48.iml b/Lista1/Exercicio48/Exercicio48.iml
+new file mode 100644
+--- /dev/null	(date 1676463809094)
++++ b/Lista1/Exercicio48/Exercicio48.iml	(date 1676463809094)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista3/Algoritimo 470/Algoritimo 470/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritimo 470/Algoritimo 470/src/Main.java b/Lista3/Algoritimo 470/Algoritimo 470/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1680288252000)
++++ b/Lista3/Algoritimo 470/Algoritimo 470/src/Main.java	(date 1680288252000)
+@@ -0,0 +1,18 @@
++import java.util.Scanner;
++
++public class Main {
++    public static void main(String[] args) {
++        int num, pri;
++        Scanner sc = new Scanner(System.in);
++        System.out.println("Digite um número > 0:");
++        num = sc.nextInt();
++        pri = Algoritimo470.primo(num);
++
++        if (pri == 0 ){
++            System.out.println(num + " é primo.");
++        } else {
++            System.out.println(num + " não é primo.");
++        }
++    }
++
++    }
+Index: Lista3/Algoritimo 470/Algoritimo 470/src/Algoritimo470.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritimo 470/Algoritimo 470/src/Algoritimo470.java b/Lista3/Algoritimo 470/Algoritimo 470/src/Algoritimo470.java
+new file mode 100644
+--- /dev/null	(date 1680288252000)
++++ b/Lista3/Algoritimo 470/Algoritimo 470/src/Algoritimo470.java	(date 1680288252000)
+@@ -0,0 +1,14 @@
++public class Algoritimo470 {
++    public static int primo(int n) {
++        int c = 0, p = 2;
++        while (c == 0 && p <= n / 2) {
++            if (n % p == 0) {
++                c = 1;
++            }
++            p++;
++        }
++        return c;
++    }
++}
++
++
+Index: Lista3/Algoritimo 470/Algoritimo 470/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritimo 470/Algoritimo 470/.gitignore b/Lista3/Algoritimo 470/Algoritimo 470/.gitignore
+new file mode 100644
+--- /dev/null	(date 1680287886000)
++++ b/Lista3/Algoritimo 470/Algoritimo 470/.gitignore	(date 1680287886000)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: Lista3/Algoritimo 470/Algoritimo 470/Algoritimo 470.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritimo 470/Algoritimo 470/Algoritimo 470.iml b/Lista3/Algoritimo 470/Algoritimo 470/Algoritimo 470.iml
+new file mode 100644
+--- /dev/null	(date 1680287888000)
++++ b/Lista3/Algoritimo 470/Algoritimo 470/Algoritimo 470.iml	(date 1680287888000)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista3/Algoritmo 487/Algoritmo487/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 487/Algoritmo487/src/Main.java b/Lista3/Algoritmo 487/Algoritmo487/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1680290382000)
++++ b/Lista3/Algoritmo 487/Algoritmo487/src/Main.java	(date 1680290382000)
+@@ -0,0 +1,19 @@
++import java.util.Scanner;
++
++public class Main {
++    public static void main(String[] args) {
++        Scanner sc = new Scanner(System.in);
++        int n = 10;
++        int[] num = new int[n];
++        for (int i = 0; i < n; i++) {
++            System.out.printf("Digite o número %d: ", i + 1);
++            num[i] = sc.nextInt();
++        }
++        Algoritmo487.inverte(num, n);
++        System.out.println("\nVETOR");
++        for (int i = 0; i < n; i++) {
++            System.out.printf("\n%d - %d", i + 1, num[i]);
++        }
++        System.out.println();
++    }
++}
+Index: Lista3/Algoritmo 487/Algoritmo487/src/Algoritmo487.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 487/Algoritmo487/src/Algoritmo487.java b/Lista3/Algoritmo 487/Algoritmo487/src/Algoritmo487.java
+new file mode 100644
+--- /dev/null	(date 1680290346000)
++++ b/Lista3/Algoritmo 487/Algoritmo487/src/Algoritmo487.java	(date 1680290346000)
+@@ -0,0 +1,11 @@
++public class Algoritmo487 {
++    public static void inverte(int[] vet, int max) {
++        int k = max;
++        for (int i = 0; i < max / 2; i++) {
++            int aux = vet[i];
++            k--;
++            vet[i] = vet[k];
++            vet[k] = aux;
++        }
++    }
++}
+\ No newline at end of file
+Index: Lista3/Algoritmo 487/Algoritmo487/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 487/Algoritmo487/.gitignore b/Lista3/Algoritmo 487/Algoritmo487/.gitignore
+new file mode 100644
+--- /dev/null	(date 1680290198000)
++++ b/Lista3/Algoritmo 487/Algoritmo487/.gitignore	(date 1680290198000)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: Lista3/Algoritmo 487/Algoritmo487/Algoritmo487.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 487/Algoritmo487/Algoritmo487.iml b/Lista3/Algoritmo 487/Algoritmo487/Algoritmo487.iml
+new file mode 100644
+--- /dev/null	(date 1680290200000)
++++ b/Lista3/Algoritmo 487/Algoritmo487/Algoritmo487.iml	(date 1680290200000)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista1/Exercicio11/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio11/src/Main.java b/Lista1/Exercicio11/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1676464079677)
++++ b/Lista1/Exercicio11/src/Main.java	(date 1676464079677)
+@@ -0,0 +1,11 @@
++import javax.swing.*;
++
++public class Main {
++    public static void main(String[] args) {
++
++        Questao11 print = new Questao11();
++        print.msg = "Aprendendo Algoritmo!!!";
++
++        JOptionPane.showMessageDialog(null, print.msg);
++    }
++}
+\ No newline at end of file
+Index: Lista1/Exercicio11/src/Questao11.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio11/src/Questao11.java b/Lista1/Exercicio11/src/Questao11.java
+new file mode 100644
+--- /dev/null	(date 1676464023454)
++++ b/Lista1/Exercicio11/src/Questao11.java	(date 1676464023454)
+@@ -0,0 +1,3 @@
++public class Questao11 {
++    String msg = null;
++}
+Index: Lista1/Exercicio12/src/Questao12.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio12/src/Questao12.java b/Lista1/Exercicio12/src/Questao12.java
+new file mode 100644
+--- /dev/null	(date 1676464258379)
++++ b/Lista1/Exercicio12/src/Questao12.java	(date 1676464258379)
+@@ -0,0 +1,4 @@
++public class Questao12 {
++    String primeiraMsg = null;
++    String segundaMsg = null;
++}
+Index: Lista1/Exercicio12/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio12/src/Main.java b/Lista1/Exercicio12/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1676464354877)
++++ b/Lista1/Exercicio12/src/Main.java	(date 1676464354877)
+@@ -0,0 +1,12 @@
++import javax.swing.*;
++
++public class Main {
++    public static void main(String[] args) {
++
++        Questao12 print = new Questao12();
++        print.primeiraMsg = "Aprendendo Algontmo!!!";
++        print.segundaMsg = "Com Anita e Guto";
++
++        JOptionPane.showMessageDialog(null, print.primeiraMsg + print.segundaMsg);
++    }
++}
+\ No newline at end of file
+Index: Lista1/Exercicio16/src/Questao16.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio16/src/Questao16.java b/Lista1/Exercicio16/src/Questao16.java
+new file mode 100644
+--- /dev/null	(date 1676466953536)
++++ b/Lista1/Exercicio16/src/Questao16.java	(date 1676466953536)
+@@ -0,0 +1,3 @@
++public class Questao16 {
++    int x;
++}
+Index: Lista1/Exercicio16/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio16/src/Main.java b/Lista1/Exercicio16/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1676466953551)
++++ b/Lista1/Exercicio16/src/Main.java	(date 1676466953551)
+@@ -0,0 +1,11 @@
++import javax.swing.*;
++
++public class Main {
++    public static void main(String[] args) {
++
++        Questao16 print = new Questao16();
++        print.x = 10 ;
++
++        JOptionPane.showMessageDialog(null, print.x);
++    }
++}
+\ No newline at end of file
+Index: Lista1/Exercicio18/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio18/src/Main.java b/Lista1/Exercicio18/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1676468098382)
++++ b/Lista1/Exercicio18/src/Main.java	(date 1676468098382)
+@@ -0,0 +1,12 @@
++import javax.swing.*;
++
++public class Main {
++    public static void main(String[] args) {
++
++        Questao18 print = new Questao18();
++        print.x = 10;
++
++        JOptionPane.showMessageDialog(null, "Valor de X =  " + (print.x + 1));
++
++    }
++}
+\ No newline at end of file
+Index: Lista1/Exercicio18/src/Questao18.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio18/src/Questao18.java b/Lista1/Exercicio18/src/Questao18.java
+new file mode 100644
+--- /dev/null	(date 1676467325312)
++++ b/Lista1/Exercicio18/src/Questao18.java	(date 1676467325312)
+@@ -0,0 +1,3 @@
++public class Questao18 {
++    int x;
++}
+Index: Lista1/Exercicio23/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio23/src/Main.java b/Lista1/Exercicio23/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1676468869425)
++++ b/Lista1/Exercicio23/src/Main.java	(date 1676468869425)
+@@ -0,0 +1,12 @@
++import javax.swing.*;
++
++public class Main {
++    public static void main(String[] args) {
++
++        Questao23 print= new Questao23();
++        print.numeroDeEntrada = Integer.parseInt(JOptionPane.showInputDialog("Digite numero de 3 casas:"));
++        print.resultado = (print.numeroDeEntrada % 100 ) / 10;
++
++        JOptionPane.showMessageDialog(null, "Algarismo da casa das dezenas: "+ print.resultado + "\n");
++    }
++}
+\ No newline at end of file
+Index: Lista3/Algoritimo 471/Algoritimo 471/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritimo 471/Algoritimo 471/src/Main.java b/Lista3/Algoritimo 471/Algoritimo 471/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1680288484000)
++++ b/Lista3/Algoritimo 471/Algoritimo 471/src/Main.java	(date 1680288484000)
+@@ -0,0 +1,23 @@
++import java.util.Scanner;
++
++public class Main {
++    public static void main(String[] args) {
++        int num, numl, n;
++        Scanner sc = new Scanner(System.in);
++        System.out.println("Digite o dividendo:");
++        num = sc.nextInt();
++        System.out.println("Digite o divisor:");
++        numl = sc.nextInt();
++        while (numl > num) {
++            System.out.println("Inválido. Digite um número menor do que o dividendo:");
++            numl = sc.nextInt();
++        }
++        /* chama a função divisor */
++        n = Algoritmo471.divisor(num, numl);
++        if (n == 0) {
++            System.out.println("Nenhuma vez");
++        } else {
++            System.out.println("Numero de vezes: " + n);
++        }
++    }
++}
+Index: Lista1/Exercicio23/src/Questao23.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio23/src/Questao23.java b/Lista1/Exercicio23/src/Questao23.java
+new file mode 100644
+--- /dev/null	(date 1676468242133)
++++ b/Lista1/Exercicio23/src/Questao23.java	(date 1676468242133)
+@@ -0,0 +1,5 @@
++public class Questao23 {
++
++    int numeroDeEntrada;
++    int resultado;
++}
+Index: Lista3/Algoritimo 471/Algoritimo 471/src/Algoritmo471.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritimo 471/Algoritimo 471/src/Algoritmo471.java b/Lista3/Algoritimo 471/Algoritimo 471/src/Algoritmo471.java
+new file mode 100644
+--- /dev/null	(date 1680288432000)
++++ b/Lista3/Algoritimo 471/Algoritimo 471/src/Algoritmo471.java	(date 1680288432000)
+@@ -0,0 +1,12 @@
++public class Algoritmo471 {
++    public static int divisor(int x, int y) {
++        int r, nl = 0;
++        r = x % y;
++        while (r == 0) {
++            nl++;
++            x = x / y;
++            r = x % y;
++        }
++        return nl;
++    }
++}
+Index: Lista1/Exercicio25/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio25/src/Main.java b/Lista1/Exercicio25/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1676490543518)
++++ b/Lista1/Exercicio25/src/Main.java	(date 1676490543518)
+@@ -0,0 +1,16 @@
++import javax.swing.*;
++
++public class Main {
++    public static void main(String[] args) {
++        Quetao25 print = new Quetao25();
++        print.data = Integer.parseInt(JOptionPane.showInputDialog("Digite data no formato dd/mm/aa"));
++
++        print.dia = print.data/10000;
++        print.mes = (print.data % 10000)/100;
++        print.ano = print.data % 100;
++
++
++        JOptionPane.showMessageDialog(null, "Dia:" + print.dia +"\n"+ "Mes:" + print.mes +"\n"+ "Ano:"+ print.ano);
++
++    }
++}
+\ No newline at end of file
+Index: Lista1/Exercicio25/src/Quetao25.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio25/src/Quetao25.java b/Lista1/Exercicio25/src/Quetao25.java
+new file mode 100644
+--- /dev/null	(date 1676489372705)
++++ b/Lista1/Exercicio25/src/Quetao25.java	(date 1676489372705)
+@@ -0,0 +1,6 @@
++public class Quetao25 {
++    int data;
++    int dia;
++    int mes;
++    int ano;
++}
+Index: Lista3/Algoritimo 471/Algoritimo 471/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritimo 471/Algoritimo 471/.gitignore b/Lista3/Algoritimo 471/Algoritimo 471/.gitignore
+new file mode 100644
+--- /dev/null	(date 1680288342000)
++++ b/Lista3/Algoritimo 471/Algoritimo 471/.gitignore	(date 1680288342000)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: Lista1/Exercicio26/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio26/src/Main.java b/Lista1/Exercicio26/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1676495634277)
++++ b/Lista1/Exercicio26/src/Main.java	(date 1676495634277)
+@@ -0,0 +1,16 @@
++import javax.swing.*;
++
++public class Main {
++    public static void main(String[] args) {
++        Quetao26 print =  new Quetao26();
++        print.data = Integer.parseInt(JOptionPane.showInputDialog("Digite a data no formato DDMMAA:"));
++
++        print.dia = print.data/10000;
++        print.mes = (print.data % 10000)/100;
++        print.ano = print.data % 100;
++        print.ndata = print.mes *10000+ print.dia*100+ print.ano;
++
++        JOptionPane.showMessageDialog(null, "Dia:"+print.dia+"\n"+"Mes:"+print.mes+"\n"+"Ano:"+print.ano+"\n"+"Data no formato MMDDAA:"+print.ndata);
++
++    }
++}
+\ No newline at end of file
+Index: Lista3/Algoritimo 471/Algoritimo 471/Algoritimo 471.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritimo 471/Algoritimo 471/Algoritimo 471.iml b/Lista3/Algoritimo 471/Algoritimo 471/Algoritimo 471.iml
+new file mode 100644
+--- /dev/null	(date 1680288344000)
++++ b/Lista3/Algoritimo 471/Algoritimo 471/Algoritimo 471.iml	(date 1680288344000)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista1/Exercicio26/src/Quetao26.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio26/src/Quetao26.java b/Lista1/Exercicio26/src/Quetao26.java
+new file mode 100644
+--- /dev/null	(date 1676495161698)
++++ b/Lista1/Exercicio26/src/Quetao26.java	(date 1676495161698)
+@@ -0,0 +1,7 @@
++public class Quetao26 {
++    int data;
++    int mes;
++    int dia;
++    int ano;
++    int ndata;
++}
+Index: Lista1/Exercicio27/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio27/src/Main.java b/Lista1/Exercicio27/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1676498583515)
++++ b/Lista1/Exercicio27/src/Main.java	(date 1676498583515)
+@@ -0,0 +1,14 @@
++import javax.swing.*;
++
++public class Main {
++    public static void main(String[] args) {
++
++        Quetao27 print =  new Quetao27();
++        print.x = 2;
++        print.y= 5;
++        JOptionPane.showMessageDialog(null,"x"+print.x + "\n" +"Y:"+ print.y +"\n");
++        print.y ++;
++        print.x ++;
++        JOptionPane.showMessageDialog(null,"Novo valor de x:"+print.x + "\n" +"Novo valor de Y:"+ print.y +"\n");
++    }
++}
+\ No newline at end of file
+Index: Lista1/Exercicio27/src/Quetao27.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio27/src/Quetao27.java b/Lista1/Exercicio27/src/Quetao27.java
+new file mode 100644
+--- /dev/null	(date 1676498416022)
++++ b/Lista1/Exercicio27/src/Quetao27.java	(date 1676498416022)
+@@ -0,0 +1,4 @@
++public class Quetao27 {
++    int x;
++    int y;
++}
+Index: Lista1/Exercicio31/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio31/src/Main.java b/Lista1/Exercicio31/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1676565138968)
++++ b/Lista1/Exercicio31/src/Main.java	(date 1676565138968)
+@@ -0,0 +1,12 @@
++import javax.swing.*;
++
++public class Main {
++    public static void main(String[] args) {
++        Questao31 med = new Questao31();
++
++        med.media = (8+9+7)/3;
++
++        JOptionPane.showMessageDialog(null, "A media eh:" + med.media + "\n");
++
++    }
++}
+\ No newline at end of file
+Index: Lista1/Exercicio31/src/Questao31.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio31/src/Questao31.java b/Lista1/Exercicio31/src/Questao31.java
+new file mode 100644
+--- /dev/null	(date 1676565079597)
++++ b/Lista1/Exercicio31/src/Questao31.java	(date 1676565079597)
+@@ -0,0 +1,3 @@
++public class Questao31 {
++    double media;
++}
+Index: Lista1/Exercicio40/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio40/src/Main.java b/Lista1/Exercicio40/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1676566052358)
++++ b/Lista1/Exercicio40/src/Main.java	(date 1676566052358)
+@@ -0,0 +1,15 @@
++import javax.swing.*;
++
++public class Main {
++    public static void main(String[] args) {
++        Questao40 calc = new Questao40();
++        calc.dividendo = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor referente ao dividendo"));
++        calc.divisor = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor referente ao divisor"));
++
++        calc.quociente = calc.dividendo/calc.divisor;
++        calc.resto = calc.dividendo% calc.divisor;
++
++        JOptionPane.showMessageDialog(null, "Dividendo:"+calc.dividendo+"\n"+"Divisor:"+calc.divisor);
++        JOptionPane.showMessageDialog(null,"Quociente:"+calc.quociente+"\n"+"Resto:"+calc.resto);
++    }
++}
+\ No newline at end of file
+Index: Lista3/Algoritmo 490/Algoritmo 490/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 490/Algoritmo 490/src/Main.java b/Lista3/Algoritmo 490/Algoritmo 490/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1680290846000)
++++ b/Lista3/Algoritmo 490/Algoritmo 490/src/Main.java	(date 1680290846000)
+@@ -0,0 +1,20 @@
++import java.util.Scanner;
++
++public class Main {
++    public static void main(String[] args) {
++        String[] nome = new String[10];
++        int[] resultados = new int[10];
++
++        Scanner scanner = new Scanner(System.in);
++        for (int i = 0; i < 10; i++) {
++            System.out.print("Digite uma palavra em letras minúsculas " + i + ": ");
++            nome[i] = scanner.nextLine();
++            resultados[i] = Algoritmo490.restantes(nome[i], nome[i].length(), "c");
++        }
++
++        for (int i = 0; i < 10; i++) {
++            System.out.println((i + 1) + " - " + nome[i]);
++        }
++    }
++}
++
+Index: Lista1/Exercicio40/src/Questao40.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio40/src/Questao40.java b/Lista1/Exercicio40/src/Questao40.java
+new file mode 100644
+--- /dev/null	(date 1676565668825)
++++ b/Lista1/Exercicio40/src/Questao40.java	(date 1676565668825)
+@@ -0,0 +1,6 @@
++public class Questao40 {
++    int dividendo;
++    int divisor ;
++    int quociente;
++    int resto;
++}
+Index: Lista1/Exercicio41/src/Questao41.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio41/src/Questao41.java b/Lista1/Exercicio41/src/Questao41.java
+new file mode 100644
+--- /dev/null	(date 1676566395363)
++++ b/Lista1/Exercicio41/src/Questao41.java	(date 1676566395363)
+@@ -0,0 +1,7 @@
++public class Questao41 {
++    double a;
++    double b;
++    double c;
++    double d;
++    double media;
++}
+Index: Lista3/Algoritmo 490/Algoritmo 490/src/Algoritmo490.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 490/Algoritmo 490/src/Algoritmo490.java b/Lista3/Algoritmo 490/Algoritmo 490/src/Algoritmo490.java
+new file mode 100644
+--- /dev/null	(date 1680290880000)
++++ b/Lista3/Algoritmo 490/Algoritmo 490/src/Algoritmo490.java	(date 1680290880000)
+@@ -0,0 +1,13 @@
++public class Algoritmo490 {
++    public static int restantes(String vet, int tam, String x) {
++        int cont = 0;
++        for (int i = 0; i < tam; i++) {
++            if (vet.charAt(i) == x.charAt(0)) {
++                vet = vet.substring(0, i) + 'u' + vet.substring(i + 1);
++                cont++;
++            }
++        }
++        return cont;
++    }
++}
++
+Index: Lista3/Algoritmo 490/Algoritmo 490/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 490/Algoritmo 490/.gitignore b/Lista3/Algoritmo 490/Algoritmo 490/.gitignore
+new file mode 100644
+--- /dev/null	(date 1680290484000)
++++ b/Lista3/Algoritmo 490/Algoritmo 490/.gitignore	(date 1680290484000)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: Lista1/Exercicio41/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio41/src/Main.java b/Lista1/Exercicio41/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1676566441998)
++++ b/Lista1/Exercicio41/src/Main.java	(date 1676566441998)
+@@ -0,0 +1,16 @@
++import javax.swing.*;
++
++public class Main {
++    public static void main(String[] args) {
++        Questao41 calc = new Questao41();
++        calc.a = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor referente ao valor de A"));
++        calc.b = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor referente ao valor de B"));
++        calc.c = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor referente ao valor de C"));
++        calc.d = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor referente ao valor de D"));
++
++        calc.media = (calc.a*1 + calc.b*2 + calc.c*3 + calc.d*4)/10;
++
++        JOptionPane.showMessageDialog(null,"A media ponderada:" + calc.media);
++
++    }
++}
+\ No newline at end of file
+Index: Lista3/Algoritmo 490/Algoritmo 490/Algoritmo 490.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 490/Algoritmo 490/Algoritmo 490.iml b/Lista3/Algoritmo 490/Algoritmo 490/Algoritmo 490.iml
+new file mode 100644
+--- /dev/null	(date 1680290486000)
++++ b/Lista3/Algoritmo 490/Algoritmo 490/Algoritmo 490.iml	(date 1680290486000)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista1/Exercicio42/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio42/src/Main.java b/Lista1/Exercicio42/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1676567310812)
++++ b/Lista1/Exercicio42/src/Main.java	(date 1676567310812)
+@@ -0,0 +1,20 @@
++import javax.swing.*;
++
++public class Main {
++    public static void main(String[] args) {
++        Questao42 calc = new Questao42();
++        calc.angulo = Double.parseDouble(JOptionPane.showInputDialog("Digite um angulo em graus"));
++
++        calc.rang = (calc.angulo * 3.14)/180;
++
++        JOptionPane.showMessageDialog(null, "Seno:"+ Math.sin(calc.rang) + "\n");
++        JOptionPane.showMessageDialog(null, "Co-seno:"+ Math.cos(calc.rang)+ "\n");
++        JOptionPane.showMessageDialog(null, "Tangente:"+ Math.tan(calc.rang)+ "\n");
++        JOptionPane.showMessageDialog(null, "Co-secante:"+ 1/(Math.sin(calc.rang))+ "\n");
++        JOptionPane.showMessageDialog(null, "Secante:"+ 1/(Math.cos(calc.rang))+ "\n");
++        JOptionPane.showMessageDialog(null, "Cotangente:"+ 1/(Math.tan(calc.rang))+ "\n");
++
++
++
++    }
++}
+\ No newline at end of file
+Index: Lista1/Exercicio42/src/Questao42.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio42/src/Questao42.java b/Lista1/Exercicio42/src/Questao42.java
+new file mode 100644
+--- /dev/null	(date 1676566826539)
++++ b/Lista1/Exercicio42/src/Questao42.java	(date 1676566826539)
+@@ -0,0 +1,5 @@
++public class Questao42 {
++
++    double angulo;
++    double rang;
++}
+Index: Lista1/Exercicio43/src/Questao43.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio43/src/Questao43.java b/Lista1/Exercicio43/src/Questao43.java
+new file mode 100644
+--- /dev/null	(date 1676567686401)
++++ b/Lista1/Exercicio43/src/Questao43.java	(date 1676567686401)
+@@ -0,0 +1,5 @@
++public class Questao43 {
++    double numero;
++    double logaritmo;
++
++}
+Index: Lista1/Exercicio43/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio43/src/Main.java b/Lista1/Exercicio43/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1676567795072)
++++ b/Lista1/Exercicio43/src/Main.java	(date 1676567795072)
+@@ -0,0 +1,10 @@
++import javax.swing.*;
++
++public class Main {
++    public static void main(String[] args) {
++        Questao43 calc = new Questao43();
++        calc.numero = Double.parseDouble(JOptionPane.showInputDialog("Entre com o logaritmando"));
++        calc.logaritmo= Math.log(calc.numero)/Math.log(10);
++        JOptionPane.showMessageDialog(null, "logaritmo:"+calc.logaritmo);
++    }
++}
+\ No newline at end of file
+Index: Lista1/Exercicio44/src/Questao44.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio44/src/Questao44.java b/Lista1/Exercicio44/src/Questao44.java
+new file mode 100644
+--- /dev/null	(date 1676568134444)
++++ b/Lista1/Exercicio44/src/Questao44.java	(date 1676568134444)
+@@ -0,0 +1,5 @@
++public class Questao44 {
++    double numero;
++    double logaritmo;
++    double base;
++}
+Index: Lista1/Exercicio44/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio44/src/Main.java b/Lista1/Exercicio44/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1676568494856)
++++ b/Lista1/Exercicio44/src/Main.java	(date 1676568494856)
+@@ -0,0 +1,14 @@
++import javax.swing.*;
++
++public class Main {
++    public static void main(String[] args) {
++        Questao44 calc = new Questao44();
++        calc.numero = Double.parseDouble(JOptionPane.showInputDialog("Entre com o logaritmando"));
++        calc.base = Double.parseDouble(JOptionPane.showInputDialog("Entre com a base"));
++        calc.logaritmo= Math.log(calc.numero)/Math.log(calc.base);
++
++        JOptionPane.showMessageDialog(null,"Logaritmo "+calc.numero+" na base "+calc.base+ " eh "+calc.logaritmo);
++
++
++    }
++}
+\ No newline at end of file
+Index: Lista1/Exercicio46/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio46/src/Main.java b/Lista1/Exercicio46/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1676569058509)
++++ b/Lista1/Exercicio46/src/Main.java	(date 1676569058509)
+@@ -0,0 +1,11 @@
++import javax.swing.*;
++
++public class Main {
++    public static void main(String[] args) {
++        Questao46 calc = new Questao46();
++        calc.saldo = Double.parseDouble(JOptionPane.showInputDialog("Digite seu Saldo:"));
++        calc.nSaldo = calc.saldo *1.01;
++        JOptionPane.showMessageDialog(null, "O novo saldo eh: "+ calc.nSaldo);
++
++    }
++}
+\ No newline at end of file
+Index: Lista1/Exercicio46/src/Questao46.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio46/src/Questao46.java b/Lista1/Exercicio46/src/Questao46.java
+new file mode 100644
+--- /dev/null	(date 1676569022514)
++++ b/Lista1/Exercicio46/src/Questao46.java	(date 1676569022514)
+@@ -0,0 +1,5 @@
++public class Questao46 {
++    double saldo;
++    double nSaldo;
++
++}
+Index: Lista1/Exercicio48/src/Questao48.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio48/src/Questao48.java b/Lista1/Exercicio48/src/Questao48.java
+new file mode 100644
+--- /dev/null	(date 1676569740199)
++++ b/Lista1/Exercicio48/src/Questao48.java	(date 1676569740199)
+@@ -0,0 +1,7 @@
++public class Questao48 {
++    double salario;
++    double quantidade;
++    double preco;
++    double valorDescontado;
++    double valorPagar;
++}
+Index: Lista1/Exercicio48/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio48/src/Main.java b/Lista1/Exercicio48/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1676570015242)
++++ b/Lista1/Exercicio48/src/Main.java	(date 1676570015242)
+@@ -0,0 +1,17 @@
++import javax.swing.*;
++
++public class Main {
++    public static void main(String[] args) {
++        Questao48 calc = new Questao48();
++        calc.salario = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor do salario minimo:"));
++        calc.quantidade = Double.parseDouble(JOptionPane.showInputDialog("Entre com a quantidade em quilowatt:"));
++        calc.preco = calc.salario/700;
++        calc.valorPagar = calc.preco* calc.quantidade;
++        calc.valorDescontado = calc.valorPagar*0.9;
++        JOptionPane.showMessageDialog(null, "Preço do quilowatt: "+ calc.preco+"\n valor a ser pago "+calc.valorPagar + " \n valor a der descontado: "+ calc.valorDescontado);
++
++
++
++
++    }
++}
+\ No newline at end of file
+Index: Lista3/Algoritimo467/Algoritimo 467/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritimo467/Algoritimo 467/src/Main.java b/Lista3/Algoritimo467/Algoritimo 467/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1680287774000)
++++ b/Lista3/Algoritimo467/Algoritimo 467/src/Main.java	(date 1680287774000)
+@@ -0,0 +1,28 @@
++import java.util.Scanner;
++
++public class Main {
++    public static void main(String[] args) {
++        double z, L, b;
++        int c;
++        Scanner sc = new Scanner(System.in);
++        for (c = 1; c < 3; c++) {
++
++            System.out.println("Digite o logaritmando maior do que 0: ");
++            L = sc.nextDouble();
++
++            while (L < 0) {
++                System.out.println("Inválido. Digite o logaritmando maior do que 0: ");
++                L = sc.nextDouble();
++            }
++            System.out.println("Digite a base maior que 0 e diferente de 1:");
++            b = sc.nextDouble();
++            while (b <= 0 || b == 1) {
++                System.out.println("Inválido. Digite a base maior que 0 e diferente de 1:");
++                b = sc.nextDouble();
++            }
++            System.out.println("O logaritmo é " + Algoritimo467.loga(L, b));
++            z = Algoritimo467.loga(L, b);
++            System.out.println("z = " + z);
++        }
++    }
++}
+\ No newline at end of file
+Index: Lista3/Algoritimo467/Algoritimo 467/src/Algoritimo467.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritimo467/Algoritimo 467/src/Algoritimo467.java b/Lista3/Algoritimo467/Algoritimo 467/src/Algoritimo467.java
+new file mode 100644
+--- /dev/null	(date 1680287774000)
++++ b/Lista3/Algoritimo467/Algoritimo 467/src/Algoritimo467.java	(date 1680287774000)
+@@ -0,0 +1,7 @@
++public class Algoritimo467 {
++    public static double loga(double base, double expo) {
++        double i;
++        i = Math.log(base) / Math.log(expo);
++        return i;
++    }
++}
+\ No newline at end of file
+Index: Lista3/Algoritimo467/Algoritimo 467/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritimo467/Algoritimo 467/.gitignore b/Lista3/Algoritimo467/Algoritimo 467/.gitignore
+new file mode 100644
+--- /dev/null	(date 1680287690000)
++++ b/Lista3/Algoritimo467/Algoritimo 467/.gitignore	(date 1680287690000)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: Lista3/Algoritimo467/Algoritimo 467/Algoritimo 467.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritimo467/Algoritimo 467/Algoritimo 467.iml b/Lista3/Algoritimo467/Algoritimo 467/Algoritimo 467.iml
+new file mode 100644
+--- /dev/null	(date 1680287692000)
++++ b/Lista3/Algoritimo467/Algoritimo 467/Algoritimo 467.iml	(date 1680287692000)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista3/Algoritmo 493/Algoritmo493/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 493/Algoritmo493/src/Main.java b/Lista3/Algoritmo 493/Algoritmo493/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1680291262000)
++++ b/Lista3/Algoritmo 493/Algoritmo493/src/Main.java	(date 1680291262000)
+@@ -0,0 +1,19 @@
++import java.util.Scanner;
++
++public class Main {
++    public static void main(String[] args) {
++        Scanner sc = new Scanner(System.in);
++        int[] num = new int[10];
++        for (int i = 0; i < 10; i++) {
++            System.out.print("Digite numero : " + (i+1) + ": ");
++            num[i] = sc.nextInt();
++        }
++        int c = VerificaOrdem.verificaOrdem(num, 10);
++        if (c == 1) {
++            System.out.println("\nORDENACAO CRESCENTE");
++        } else if (c == 2) {
++            System.out.println("\nORDENACAO DECRESCENTE");
++        } else {
++            System.out.println("\nNAO ESTA ORDENADO");
++        }    }
++}
+\ No newline at end of file
+Index: Lista3/Algoritmo 493/Algoritmo493/src/BuscaL.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 493/Algoritmo493/src/BuscaL.java b/Lista3/Algoritmo 493/Algoritmo493/src/BuscaL.java
+new file mode 100644
+--- /dev/null	(date 1680291178000)
++++ b/Lista3/Algoritmo 493/Algoritmo493/src/BuscaL.java	(date 1680291178000)
+@@ -0,0 +1,13 @@
++public class BuscaL {
++    public static int buscaL(int[] vet, int tam) {
++        int x;
++        for (int i = 0; i < tam - 1; i++) {
++            if (vet[i] > vet[i + 1]) {
++                x = 0;
++                return x;
++            }
++        }
++        x = 1;
++        return x;
++    }
++}
+\ No newline at end of file
+Index: Lista3/Algoritmo 493/Algoritmo493/src/Algoritmo493.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 493/Algoritmo493/src/Algoritmo493.java b/Lista3/Algoritmo 493/Algoritmo493/src/Algoritmo493.java
+new file mode 100644
+--- /dev/null	(date 1680291144000)
++++ b/Lista3/Algoritmo 493/Algoritmo493/src/Algoritmo493.java	(date 1680291144000)
+@@ -0,0 +1,14 @@
++public class Algoritmo493 {
++    public static int busca(int[] vet, int tam) {
++        int x;
++        for (int i = 0; i < tam-1; i++) {
++            if (vet[i] < vet[i+1]) {
++                x = 0;
++                return x;
++            }
++        }
++        x = 1;
++        return x;
++    }
++
++}
+Index: Lista3/Algoritmo 493/Algoritmo493/src/VerificaOrdem.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 493/Algoritmo493/src/VerificaOrdem.java b/Lista3/Algoritmo 493/Algoritmo493/src/VerificaOrdem.java
+new file mode 100644
+--- /dev/null	(date 1680291226000)
++++ b/Lista3/Algoritmo 493/Algoritmo493/src/VerificaOrdem.java	(date 1680291226000)
+@@ -0,0 +1,15 @@
++public class VerificaOrdem {
++    public static int verificaOrdem(int[] vetor, int t) {
++        int r = Algoritmo493.busca(vetor, t);
++        if (r == 1) {
++            return 2;
++        } else {
++            r = BuscaL.buscaL(vetor, t);
++            if (r == 1) {
++                return 1;
++            } else {
++                return 0;
++            }
++        }
++    }
++}
+\ No newline at end of file
+Index: Lista3/Algoritmo 493/Algoritmo493/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 493/Algoritmo493/.gitignore b/Lista3/Algoritmo 493/Algoritmo493/.gitignore
+new file mode 100644
+--- /dev/null	(date 1680291030000)
++++ b/Lista3/Algoritmo 493/Algoritmo493/.gitignore	(date 1680291030000)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: Lista3/Algoritmo 493/Algoritmo493/Algoritmo493.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 493/Algoritmo493/Algoritmo493.iml b/Lista3/Algoritmo 493/Algoritmo493/Algoritmo493.iml
+new file mode 100644
+--- /dev/null	(date 1680291032000)
++++ b/Lista3/Algoritmo 493/Algoritmo493/Algoritmo493.iml	(date 1680291032000)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista3/Algoritmo 460/untitled/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 460/untitled/src/Main.java b/Lista3/Algoritmo 460/untitled/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1680286882000)
++++ b/Lista3/Algoritmo 460/untitled/src/Main.java	(date 1680286882000)
+@@ -0,0 +1,16 @@
++import java.util.Scanner;
++
++public class Main {
++    public static void main(String[] args) {
++        int a, c;
++        for (c = 0; c < 3; c++) {
++            System.out.println("\n\ndigite numero:");
++            Scanner sc = new Scanner(System.in);
++            a = sc.nextInt();
++            System.out.println("O dobro: " + Algoritmo460.dob(a));
++
++
++        }
++        System.out.println("\n");
++    }
++}
+\ No newline at end of file
+Index: Lista3/Algoritmo 460/untitled/src/Algoritmo460.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 460/untitled/src/Algoritmo460.java b/Lista3/Algoritmo 460/untitled/src/Algoritmo460.java
+new file mode 100644
+--- /dev/null	(date 1680286882000)
++++ b/Lista3/Algoritmo 460/untitled/src/Algoritmo460.java	(date 1680286882000)
+@@ -0,0 +1,5 @@
++public class Algoritmo460 {
++    public static  int dob(int x){
++        return x *2;
++    }
++}
+Index: Lista3/Algoritmo 460/untitled/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 460/untitled/.gitignore b/Lista3/Algoritmo 460/untitled/.gitignore
+new file mode 100644
+--- /dev/null	(date 1680286670000)
++++ b/Lista3/Algoritmo 460/untitled/.gitignore	(date 1680286670000)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: Lista3/Algoritmo 460/untitled/untitled.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 460/untitled/untitled.iml b/Lista3/Algoritmo 460/untitled/untitled.iml
+new file mode 100644
+--- /dev/null	(date 1680287044000)
++++ b/Lista3/Algoritmo 460/untitled/untitled.iml	(date 1680287044000)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista3/Algoritmo 494/Algoritmo 494/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 494/Algoritmo 494/src/Main.java b/Lista3/Algoritmo 494/Algoritmo 494/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1680291688000)
++++ b/Lista3/Algoritmo 494/Algoritmo 494/src/Main.java	(date 1680291688000)
+@@ -0,0 +1,34 @@
++import java.util.Scanner;
++
++public class Main {
++    public static void main(String[] args) {
++        Scanner sc = new Scanner(System.in);
++        int L, c, t, tl;
++        String[] nome = new String[3];
++        String[] prof = new String[3];
++        String[] ender = new String[3];
++
++        for (L = 0; L < 3; L++) {
++            System.out.println("\nDigite nome:");
++            nome[L] = sc.nextLine();
++            System.out.println("Digite endereco:");
++            ender[L] = sc.nextLine();
++            System.out.println("Digite profissao:");
++            prof[L] = sc.nextLine();
++        }
++
++        for (L = 0; L < 2; L++) {
++            for (c = L + 1; c < 3; c++) {
++                if (nome[L].compareTo(nome[c]) > 0) {
++                    Algoritmo494.troca(nome, L, c);
++                    Algoritmo494.troca(ender, L, c);
++                    Algoritmo494.troca(prof, L, c);
++                }
++            }
++        }
++
++        for (L = 0; L < 3; L++) {
++            System.out.println("\n" + nome[L] + "\t" + ender[L] + "\t" + prof[L]);
++        }
++    }
++}
+\ No newline at end of file
+Index: Lista3/Algoritmo 494/Algoritmo 494/src/Algoritmo494.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 494/Algoritmo 494/src/Algoritmo494.java b/Lista3/Algoritmo 494/Algoritmo 494/src/Algoritmo494.java
+new file mode 100644
+--- /dev/null	(date 1680291604000)
++++ b/Lista3/Algoritmo 494/Algoritmo 494/src/Algoritmo494.java	(date 1680291604000)
+@@ -0,0 +1,8 @@
++public class Algoritmo494 {
++    public static void troca(String[] vet, int i, int j) {
++        String aux;
++        aux = vet[i];
++        vet[i] = vet[j];
++        vet[j] = aux;
++    }
++}
+Index: Lista3/Algoritmo 494/Algoritmo 494/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 494/Algoritmo 494/.gitignore b/Lista3/Algoritmo 494/Algoritmo 494/.gitignore
+new file mode 100644
+--- /dev/null	(date 1680291454000)
++++ b/Lista3/Algoritmo 494/Algoritmo 494/.gitignore	(date 1680291454000)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: Lista3/Algoritmo 494/Algoritmo 494/Algoritmo 494.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 494/Algoritmo 494/Algoritmo 494.iml b/Lista3/Algoritmo 494/Algoritmo 494/Algoritmo 494.iml
+new file mode 100644
+--- /dev/null	(date 1680291456000)
++++ b/Lista3/Algoritmo 494/Algoritmo 494/Algoritmo 494.iml	(date 1680291456000)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista3/Algoritmo 463/Algoritmo463/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 463/Algoritmo463/src/Main.java b/Lista3/Algoritmo 463/Algoritmo463/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1680287370000)
++++ b/Lista3/Algoritmo 463/Algoritmo463/src/Main.java	(date 1680287370000)
+@@ -0,0 +1,16 @@
++import java.util.Scanner;
++
++public class Main {
++    public static void main(String[] args) {
++
++        double ang, r;
++        Scanner sc = new Scanner(System.in);
++
++        System.out.println("\nDigite o angulo em graus: ");
++        ang = sc.nextDouble();
++
++        r= Algoritimo463.radiano(ang);
++        System.out.println("\nGraus: " + ang + " radianos: " + r);
++        System.out.println("\n");
++    }
++}
+\ No newline at end of file
+Index: Lista3/Algoritmo 463/Algoritmo463/src/Algoritimo463.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 463/Algoritmo463/src/Algoritimo463.java b/Lista3/Algoritmo 463/Algoritmo463/src/Algoritimo463.java
+new file mode 100644
+--- /dev/null	(date 1680287370000)
++++ b/Lista3/Algoritmo 463/Algoritmo463/src/Algoritimo463.java	(date 1680287370000)
+@@ -0,0 +1,7 @@
++public class Algoritimo463 {
++    public static double radiano(double rang) {
++        double p1 = Math.PI;
++        rang = rang * p1 / 180;
++        return rang;
++    }
++}
+Index: Lista3/Algoritmo 463/Algoritmo463/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 463/Algoritmo463/.gitignore b/Lista3/Algoritmo 463/Algoritmo463/.gitignore
+new file mode 100644
+--- /dev/null	(date 1680287304000)
++++ b/Lista3/Algoritmo 463/Algoritmo463/.gitignore	(date 1680287304000)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: Lista3/Algoritmo 463/Algoritmo463/Algoritmo463.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 463/Algoritmo463/Algoritmo463.iml b/Lista3/Algoritmo 463/Algoritmo463/Algoritmo463.iml
+new file mode 100644
+--- /dev/null	(date 1680287308000)
++++ b/Lista3/Algoritmo 463/Algoritmo463/Algoritmo463.iml	(date 1680287308000)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista3/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/src/Main.java b/Lista3/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1680313229056)
++++ b/Lista3/src/Main.java	(date 1680313229056)
+@@ -0,0 +1,5 @@
++public class Main {
++    public static void main(String[] args) {
++        System.out.println("Hello world!");
++    }
++}
+\ No newline at end of file
+Index: Lista3/Algoritmo 495/Algoritmo 495/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 495/Algoritmo 495/src/Main.java b/Lista3/Algoritmo 495/Algoritmo 495/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1680291958000)
++++ b/Lista3/Algoritmo 495/Algoritmo 495/src/Main.java	(date 1680291958000)
+@@ -0,0 +1,21 @@
++import java.util.Scanner;
++
++public class Main {
++
++    public static void main(String[] args) {
++        Scanner sc = new Scanner(System.in);
++        String[] nome = new String[5];
++
++        for (int i = 0; i < 5; i++) {
++            System.out.print("Digite nome " + (i + 1) + ": ");
++            nome[i] = sc.nextLine();
++        }
++
++        Algoritmo495.ordena(nome);
++
++        System.out.println("\n\nNOMES ORDENADOS\n");
++        for (int i = 0; i < 5; i++) {
++            System.out.println((i + 1) + " - " + nome[i]);
++        }
++    }
++}
+\ No newline at end of file
+Index: Lista3/Algoritmo 495/Algoritmo 495/src/Algoritmo495.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 495/Algoritmo 495/src/Algoritmo495.java b/Lista3/Algoritmo 495/Algoritmo 495/src/Algoritmo495.java
+new file mode 100644
+--- /dev/null	(date 1680291886000)
++++ b/Lista3/Algoritmo 495/Algoritmo 495/src/Algoritmo495.java	(date 1680291886000)
+@@ -0,0 +1,16 @@
++public class Algoritmo495 {
++    public static void ordena(String[] vet) {
++        int tam = vet.length;
++        String aux;
++        for (int i = 0; i < tam - 1; i++) {
++            for (int j = i + 1; j < tam; j++) {
++                if (vet[i].compareToIgnoreCase(vet[j]) > 0) {
++                    aux = vet[i];
++                    vet[i] = vet[j];
++                    vet[j] = aux;
++                }
++            }
++        }
++    }
++}
++
+Index: Lista3/Algoritmo 495/Algoritmo 495/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 495/Algoritmo 495/.gitignore b/Lista3/Algoritmo 495/Algoritmo 495/.gitignore
+new file mode 100644
+--- /dev/null	(date 1680291832000)
++++ b/Lista3/Algoritmo 495/Algoritmo 495/.gitignore	(date 1680291832000)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: Lista3/Algoritmo 495/Algoritmo 495/Algoritmo 495.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 495/Algoritmo 495/Algoritmo 495.iml b/Lista3/Algoritmo 495/Algoritmo 495/Algoritmo 495.iml
+new file mode 100644
+--- /dev/null	(date 1680291834000)
++++ b/Lista3/Algoritmo 495/Algoritmo 495/Algoritmo 495.iml	(date 1680291834000)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista3/Algoritmo 464/untitled/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 464/untitled/src/Main.java b/Lista3/Algoritmo 464/untitled/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1680287516000)
++++ b/Lista3/Algoritmo 464/untitled/src/Main.java	(date 1680287516000)
+@@ -0,0 +1,16 @@
++import java.util.Scanner;
++
++public class Main {
++    public static void main(String[] args) {
++
++        double ang, g;
++        Scanner sc = new Scanner(System.in);
++
++        System.out.println("\nDigite angulo em radianos: ");
++        ang = sc.nextDouble();
++
++        g = Algoritmo464.graus(ang);
++        System.out.println("\nradianos: "+ ang + " graus " + g);
++        System.out.println("\n");
++    }
++}
+Index: Lista3/Algoritmo 464/untitled/src/Algoritmo464.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 464/untitled/src/Algoritmo464.java b/Lista3/Algoritmo 464/untitled/src/Algoritmo464.java
+new file mode 100644
+--- /dev/null	(date 1680287516000)
++++ b/Lista3/Algoritmo 464/untitled/src/Algoritmo464.java	(date 1680287516000)
+@@ -0,0 +1,9 @@
++public class Algoritmo464 {
++    public static  double graus(double gang){
++
++        double p1 = Math.PI;
++        gang = gang * 180/ p1;
++        return  gang;
++
++    }
++}
+Index: Lista3/Algoritmo 464/untitled/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 464/untitled/.gitignore b/Lista3/Algoritmo 464/untitled/.gitignore
+new file mode 100644
+--- /dev/null	(date 1680287456000)
++++ b/Lista3/Algoritmo 464/untitled/.gitignore	(date 1680287456000)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: Lista3/Algoritmo 464/untitled/untitled.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 464/untitled/untitled.iml b/Lista3/Algoritmo 464/untitled/untitled.iml
+new file mode 100644
+--- /dev/null	(date 1680287460000)
++++ b/Lista3/Algoritmo 464/untitled/untitled.iml	(date 1680287460000)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista3/Lista3.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Lista3.iml b/Lista3/Lista3.iml
+new file mode 100644
+--- /dev/null	(date 1680313312750)
++++ b/Lista3/Lista3.iml	(date 1680313312750)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="jdk" jdkName="17" jdkType="JavaSDK" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: .idea/IF_Goiano_ED1.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/IF_Goiano_ED1.iml b/.idea/IF_Goiano_ED1.iml
+new file mode 100644
+--- /dev/null	(date 1676640354000)
++++ b/.idea/IF_Goiano_ED1.iml	(date 1676640354000)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1680313312767)
++++ b/.idea/modules.xml	(date 1680313312767)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/IF_Goiano_ED1.iml" filepath="$PROJECT_DIR$/.idea/IF_Goiano_ED1.iml" />
++      <module fileurl="file://$PROJECT_DIR$/Lista3/Lista3.iml" filepath="$PROJECT_DIR$/Lista3/Lista3.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1676640356297)
++++ b/.idea/.gitignore	(date 1676640356297)
+@@ -0,0 +1,8 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1676640354076)
++++ b/.idea/vcs.xml	(date 1676640354076)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: Lista1/Lista1.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Lista1.iml b/Lista1/Lista1.iml
+new file mode 100644
+--- /dev/null	(date 1676461868704)
++++ b/Lista1/Lista1.iml	(date 1676461868704)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista3/Algoritmo 497/Algoritmo 497/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 497/Algoritmo 497/src/Main.java b/Lista3/Algoritmo 497/Algoritmo 497/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1680292848000)
++++ b/Lista3/Algoritmo 497/Algoritmo 497/src/Main.java	(date 1680292848000)
+@@ -0,0 +1,27 @@
++import java.util.Scanner;
++
++public class Main {
++    public static void main(String[] args) {
++        Scanner sc = new Scanner(System.in);
++        int[] num = new int[10];
++        int n, c;
++        System.out.println("Digite 10 numeros:");
++        for (int i = 0; i < 10; i++) {
++            System.out.print("Digite o " + (i+1) + "o numero: ");
++            num[i] = sc.nextInt();
++        }
++        System.out.print("Digite o numero de busca: ");
++        n = sc.nextInt();
++        Algoritmo497.ordena(num, 10);
++        c = Busca.busca(num, 10, n);
++        System.out.println("\nVETOR ORDENADO:");
++        for (int i = 0; i < 10; i++) {
++            System.out.println((i+1) + " - " + num[i]);
++        }
++        if (c >= 0) {
++            System.out.println("\nPosicao no vetor: " + (c+1));
++        } else {
++            System.out.println("\nNao encontrado");
++        }
++    }
++}
+Index: Lista3/Algoritmo 497/Algoritmo 497/src/Busca.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 497/Algoritmo 497/src/Busca.java b/Lista3/Algoritmo 497/Algoritmo 497/src/Busca.java
+new file mode 100644
+--- /dev/null	(date 1680292808000)
++++ b/Lista3/Algoritmo 497/Algoritmo 497/src/Busca.java	(date 1680292808000)
+@@ -0,0 +1,17 @@
++public class Busca {
++    public static int busca(int[] vet, int tam, int chave) {
++        int inicio = 0, fim = tam-1;
++        while (inicio <= fim) {
++            int meio = (inicio+fim)/2;
++            if (chave == vet[meio]) {
++                return meio;
++            } else if (chave < vet[meio]) {
++                fim = meio-1;
++            } else {
++                inicio = meio+1;
++            }
++        }
++        return -1;
++    }
++}
++
+Index: Lista1/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/.gitignore b/Lista1/.gitignore
+new file mode 100644
+--- /dev/null	(date 1676461857778)
++++ b/Lista1/.gitignore	(date 1676461857778)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: Lista3/Algoritmo 497/Algoritmo 497/src/Algoritmo497.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 497/Algoritmo 497/src/Algoritmo497.java b/Lista3/Algoritmo 497/Algoritmo 497/src/Algoritmo497.java
+new file mode 100644
+--- /dev/null	(date 1680292786000)
++++ b/Lista3/Algoritmo 497/Algoritmo 497/src/Algoritmo497.java	(date 1680292786000)
+@@ -0,0 +1,14 @@
++public class Algoritmo497 {
++
++    public static void ordena(int[] vet, int tam) {
++        for (int i = 0; i < tam - 1; i++) {
++            for (int j = i + 1; j < tam; j++) {
++                if (vet[i] > vet[j]) {
++                    int temp = vet[i];
++                    vet[i] = vet[j];
++                    vet[j] = temp;
++                }
++            }
++        }
++    }
++}
+Index: Lista3/Algoritmo 497/Algoritmo 497/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 497/Algoritmo 497/.gitignore b/Lista3/Algoritmo 497/Algoritmo 497/.gitignore
+new file mode 100644
+--- /dev/null	(date 1680292054000)
++++ b/Lista3/Algoritmo 497/Algoritmo 497/.gitignore	(date 1680292054000)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: Lista3/Algoritmo 497/Algoritmo 497/Algoritmo 497.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 497/Algoritmo 497/Algoritmo 497.iml b/Lista3/Algoritmo 497/Algoritmo 497/Algoritmo 497.iml
+new file mode 100644
+--- /dev/null	(date 1680292054000)
++++ b/Lista3/Algoritmo 497/Algoritmo 497/Algoritmo 497.iml	(date 1680292054000)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista3/Algoritmo 473/Algoritmo 473/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 473/Algoritmo 473/src/Main.java b/Lista3/Algoritmo 473/Algoritmo 473/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1680288714000)
++++ b/Lista3/Algoritmo 473/Algoritmo 473/src/Main.java	(date 1680288714000)
+@@ -0,0 +1,21 @@
++import java.util.Scanner;
++
++public class Main {
++    public static void main(String[] args) {
++
++        Scanner sc = new Scanner(System.in);
++        String c;
++        int x;
++
++        System.out.print("\nDigite letra: ");
++        c = sc.nextLine();
++
++        x = Algoritmo473.maiuscula(c);
++
++        if (x == 1) {
++            System.out.println("\nÉ uma consoante.");
++        } else {
++            System.out.println("\nNão é uma consoante.");
++        }
++    }
++}
+Index: Lista3/Algoritmo 473/Algoritmo 473/src/Algoritmo473.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 473/Algoritmo 473/src/Algoritmo473.java b/Lista3/Algoritmo 473/Algoritmo 473/src/Algoritmo473.java
+new file mode 100644
+--- /dev/null	(date 1680288650000)
++++ b/Lista3/Algoritmo 473/Algoritmo 473/src/Algoritmo473.java	(date 1680288650000)
+@@ -0,0 +1,12 @@
++public class Algoritmo473 {
++    public static int maiuscula(String letra) {
++        if (!letra.equals("A") && !letra.equals("a") && !letra.equals("E") && !letra.equals("e")
++                && !letra.equals("I") && !letra.equals("i") && !letra.equals("O") && !letra.equals("o")
++                && !letra.equals("U") && !letra.equals("u")) {
++            return 1;
++        } else {
++            return 0;
++        }
++    }
++}
++
+Index: Lista3/Algoritmo 473/Algoritmo 473/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 473/Algoritmo 473/.gitignore b/Lista3/Algoritmo 473/Algoritmo 473/.gitignore
+new file mode 100644
+--- /dev/null	(date 1680288562000)
++++ b/Lista3/Algoritmo 473/Algoritmo 473/.gitignore	(date 1680288562000)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: Lista3/Algoritmo 473/Algoritmo 473/Algoritmo 473.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 473/Algoritmo 473/Algoritmo 473.iml b/Lista3/Algoritmo 473/Algoritmo 473/Algoritmo 473.iml
+new file mode 100644
+--- /dev/null	(date 1680288564000)
++++ b/Lista3/Algoritmo 473/Algoritmo 473/Algoritmo 473.iml	(date 1680288564000)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista1/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/.idea/misc.xml b/Lista1/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1676461868845)
++++ b/Lista1/.idea/misc.xml	(date 1676461868845)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: Lista1/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/src/Main.java b/Lista1/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1676569163731)
++++ b/Lista1/src/Main.java	(date 1676569163731)
+@@ -0,0 +1,6 @@
++public class Main {
++    public static void main(String[] args) {
++        System.out.println("Feito por Gabriel Cândido Ferreira Dias ");
++
++    }
++}
+\ No newline at end of file
+Index: Lista3/Algoritmo 480/Algoritmo 480/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 480/Algoritmo 480/src/Main.java b/Lista3/Algoritmo 480/Algoritmo 480/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1680288924000)
++++ b/Lista3/Algoritmo 480/Algoritmo 480/src/Main.java	(date 1680288924000)
+@@ -0,0 +1,17 @@
++import java.util.Scanner;
++
++public class Main {
++    public static void main(String[] args) {
++        int n, x;
++        Scanner sc = new Scanner(System.in);
++        System.out.print("Digite um número: ");
++        n = sc.nextInt();
++        x = Algoritmo480.reverso(n);
++        System.out.println(n + " - " + x);
++        if (x == n) {
++            System.out.println("É um número capicua.");
++        } else {
++            System.out.println("Não é um número capicua.");
++        }
++    }
++}
+\ No newline at end of file
+Index: Lista3/Algoritmo 480/Algoritmo 480/src/Algoritmo480.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 480/Algoritmo 480/src/Algoritmo480.java b/Lista3/Algoritmo 480/Algoritmo 480/src/Algoritmo480.java
+new file mode 100644
+--- /dev/null	(date 1680288876000)
++++ b/Lista3/Algoritmo 480/Algoritmo 480/src/Algoritmo480.java	(date 1680288876000)
+@@ -0,0 +1,12 @@
++public class Algoritmo480 {
++    public static int reverso(int num) {
++    int soma = 0, r;
++    while (num != 0) {
++        r = num % 10;
++        soma = soma * 10 + r;
++        num = num / 10;
++    }
++    return soma;
++    }
++}
++
+Index: Lista3/Algoritmo 499/Algoritmo 499/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 499/Algoritmo 499/src/Main.java b/Lista3/Algoritmo 499/Algoritmo 499/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1680293460000)
++++ b/Lista3/Algoritmo 499/Algoritmo 499/src/Main.java	(date 1680293460000)
+@@ -0,0 +1,49 @@
++import java.util.Scanner;
++
++public class Main {
++    public static void main(String[] args) {
++        int[] num = new int[5];
++        int flag = 0, op;
++
++        Scanner input = new Scanner(System.in);
++
++        do {
++            System.out.println("\n\n\n MENU VETOR - FUNÇÃO ");
++            System.out.println("\n1 Dados do VETOR");
++            System.out.println("\n2 Ordena VETOR");
++            System.out.println("\n3 Imprime VETOR");
++            System.out.println("\n4 Sai do programa");
++            System.out.print("\nOPÇÃO: ");
++            op = input.nextInt();
++
++            switch (op) {
++                case 1:
++                    Algoritmo499.entrada(num, 5);
++                    flag = 1;
++                    break;
++                case 2:
++                    if (flag == 1) {
++                        ordena.ordena(num, 5);
++                    } else {
++                        System.out.println("\nEscolha primeiro opção 1");
++                    }
++                    break;
++                case 3:
++                    if (flag == 1) {
++                        imprime.imprime(num, 5);
++                    } else {
++                        System.out.println("\nEscolha primeiro opção 1");
++                    }
++                    break;
++                case 4:
++                    System.out.println("\nSaindo do Algoritmo");
++                    break;
++                default:
++                    System.out.println("\nOpção inválida");
++            }
++        } while (op != 4);
++
++        input.close();
++
++    }
++}
+\ No newline at end of file
+Index: Lista3/Algoritmo 480/Algoritmo 480/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 480/Algoritmo 480/.gitignore b/Lista3/Algoritmo 480/Algoritmo 480/.gitignore
+new file mode 100644
+--- /dev/null	(date 1680288816000)
++++ b/Lista3/Algoritmo 480/Algoritmo 480/.gitignore	(date 1680288816000)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: Lista3/Algoritmo 480/Algoritmo 480/Algoritmo 480.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 480/Algoritmo 480/Algoritmo 480.iml b/Lista3/Algoritmo 480/Algoritmo 480/Algoritmo 480.iml
+new file mode 100644
+--- /dev/null	(date 1680288818000)
++++ b/Lista3/Algoritmo 480/Algoritmo 480/Algoritmo 480.iml	(date 1680288818000)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista3/Algoritmo 499/Algoritmo 499/src/ordena.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 499/Algoritmo 499/src/ordena.java b/Lista3/Algoritmo 499/Algoritmo 499/src/ordena.java
+new file mode 100644
+--- /dev/null	(date 1680293072000)
++++ b/Lista3/Algoritmo 499/Algoritmo 499/src/ordena.java	(date 1680293072000)
+@@ -0,0 +1,14 @@
++public class ordena {
++    public static void ordena(int[] vet, int tam) {
++        for (int i = 0; i < tam-1; i++) {
++            for (int j = i+1; j < tam; j++) {
++                if (vet[i] > vet[j]) {
++                    int aux = vet[i];
++                    vet[i] = vet[j];
++                    vet[j] = aux;
++                }
++            }
++        }
++    }
++}
++
+Index: Lista3/Algoritmo 499/Algoritmo 499/src/imprime.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 499/Algoritmo 499/src/imprime.java b/Lista3/Algoritmo 499/Algoritmo 499/src/imprime.java
+new file mode 100644
+--- /dev/null	(date 1680293056000)
++++ b/Lista3/Algoritmo 499/Algoritmo 499/src/imprime.java	(date 1680293056000)
+@@ -0,0 +1,10 @@
++public class imprime {
++    public static void imprime(int[] vet, int tam) {
++        System.out.println("\nVETOR");
++
++        for (int i = 0; i < tam; i++) {
++            System.out.println(i+1 + " - " + vet[i]);
++        }
++    }
++
++}
+Index: Lista3/Algoritmo 499/Algoritmo 499/src/Algoritmo499.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 499/Algoritmo 499/src/Algoritmo499.java b/Lista3/Algoritmo 499/Algoritmo 499/src/Algoritmo499.java
+new file mode 100644
+--- /dev/null	(date 1680293034000)
++++ b/Lista3/Algoritmo 499/Algoritmo 499/src/Algoritmo499.java	(date 1680293034000)
+@@ -0,0 +1,16 @@
++import java.util.Scanner;
++
++public class Algoritmo499 {
++    public  static void entrada(int[] vet, int tam) {
++        Scanner sc = new Scanner(System.in);
++
++        System.out.println("\nEntrada do VETOR");
++
++        for (int i = 0; i < tam; i++) {
++            System.out.print("Digite numero " + (i+1) + ": ");
++            vet[i] = sc.nextInt();
++        }
++
++        sc.close();
++    }
++}
+Index: Lista3/Algoritmo 499/Algoritmo 499/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 499/Algoritmo 499/.gitignore b/Lista3/Algoritmo 499/Algoritmo 499/.gitignore
+new file mode 100644
+--- /dev/null	(date 1680292970000)
++++ b/Lista3/Algoritmo 499/Algoritmo 499/.gitignore	(date 1680292970000)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: Lista3/Algoritmo 499/Algoritmo 499/Algoritmo 499.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 499/Algoritmo 499/Algoritmo 499.iml b/Lista3/Algoritmo 499/Algoritmo 499/Algoritmo 499.iml
+new file mode 100644
+--- /dev/null	(date 1680292974000)
++++ b/Lista3/Algoritmo 499/Algoritmo 499/Algoritmo 499.iml	(date 1680292974000)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista3/Atividade-03/LICENSE
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Atividade-03/LICENSE b/Lista3/Atividade-03/LICENSE
+new file mode 100644
+--- /dev/null	(date 1680307062000)
++++ b/Lista3/Atividade-03/LICENSE	(date 1680307062000)
+@@ -0,0 +1,21 @@
++MIT License
++
++Copyright (c) 2023 Wisley César
++
++Permission is hereby granted, free of charge, to any person obtaining a copy
++of this software and associated documentation files (the "Software"), to deal
++in the Software without restriction, including without limitation the rights
++to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
++copies of the Software, and to permit persons to whom the Software is
++furnished to do so, subject to the following conditions:
++
++The above copyright notice and this permission notice shall be included in all
++copies or substantial portions of the Software.
++
++THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
++IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
++FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
++AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
++LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
++OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
++SOFTWARE.
+Index: Lista1/.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/.idea/modules.xml b/Lista1/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1676463809109)
++++ b/Lista1/.idea/modules.xml	(date 1676463809109)
+@@ -0,0 +1,24 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/Exercicio11/Exercicio11.iml" filepath="$PROJECT_DIR$/Exercicio11/Exercicio11.iml" />
++      <module fileurl="file://$PROJECT_DIR$/Exercicio12/Exercicio112.iml" filepath="$PROJECT_DIR$/Exercicio12/Exercicio112.iml" />
++      <module fileurl="file://$PROJECT_DIR$/Exercicio16/Exercicio16.iml" filepath="$PROJECT_DIR$/Exercicio16/Exercicio16.iml" />
++      <module fileurl="file://$PROJECT_DIR$/Exercicio18/Exercicio18.iml" filepath="$PROJECT_DIR$/Exercicio18/Exercicio18.iml" />
++      <module fileurl="file://$PROJECT_DIR$/Exercicio23/Exercicio23.iml" filepath="$PROJECT_DIR$/Exercicio23/Exercicio23.iml" />
++      <module fileurl="file://$PROJECT_DIR$/Exercicio25/Exercicio25.iml" filepath="$PROJECT_DIR$/Exercicio25/Exercicio25.iml" />
++      <module fileurl="file://$PROJECT_DIR$/Exercicio26/Exercicio26.iml" filepath="$PROJECT_DIR$/Exercicio26/Exercicio26.iml" />
++      <module fileurl="file://$PROJECT_DIR$/Exercicio27/Exercicio27.iml" filepath="$PROJECT_DIR$/Exercicio27/Exercicio27.iml" />
++      <module fileurl="file://$PROJECT_DIR$/Exercicio31/Exercicio31.iml" filepath="$PROJECT_DIR$/Exercicio31/Exercicio31.iml" />
++      <module fileurl="file://$PROJECT_DIR$/Exercicio40/Exercicio40.iml" filepath="$PROJECT_DIR$/Exercicio40/Exercicio40.iml" />
++      <module fileurl="file://$PROJECT_DIR$/Exercicio41/Exercicio41.iml" filepath="$PROJECT_DIR$/Exercicio41/Exercicio41.iml" />
++      <module fileurl="file://$PROJECT_DIR$/Exercicio42/Exercicio42.iml" filepath="$PROJECT_DIR$/Exercicio42/Exercicio42.iml" />
++      <module fileurl="file://$PROJECT_DIR$/Exercicio43/Exercicio43.iml" filepath="$PROJECT_DIR$/Exercicio43/Exercicio43.iml" />
++      <module fileurl="file://$PROJECT_DIR$/Exercicio44/Exercicio44.iml" filepath="$PROJECT_DIR$/Exercicio44/Exercicio44.iml" />
++      <module fileurl="file://$PROJECT_DIR$/Exercicio46/Exercicio46.iml" filepath="$PROJECT_DIR$/Exercicio46/Exercicio46.iml" />
++      <module fileurl="file://$PROJECT_DIR$/Exercicio48/Exercicio48.iml" filepath="$PROJECT_DIR$/Exercicio48/Exercicio48.iml" />
++      <module fileurl="file://$PROJECT_DIR$/Lista1.iml" filepath="$PROJECT_DIR$/Lista1.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: Lista3/Atividade-03/README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Atividade-03/README.md b/Lista3/Atividade-03/README.md
+new file mode 100644
+--- /dev/null	(date 1680307062000)
++++ b/Lista3/Atividade-03/README.md	(date 1680307062000)
+@@ -0,0 +1,2 @@
++# Atividade-03
++ Atividade 03
+Index: Lista1/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/.idea/workspace.xml b/Lista1/.idea/workspace.xml
+new file mode 100644
+--- /dev/null	(date 1676640175642)
++++ b/Lista1/.idea/workspace.xml	(date 1676640175642)
+@@ -0,0 +1,126 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="AutoImportSettings">
++    <option name="autoReloadType" value="SELECTIVE" />
++  </component>
++  <component name="ChangeListManager">
++    <list default="true" id="3f90158a-4084-420d-afcb-489a75e82011" name="Changes" comment="">
++      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio11/Exercicio11.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio11/src/Main.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio11/src/Questao11.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio12/Exercicio112.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio12/src/Main.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio12/src/Questao12.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio16/Exercicio16.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio16/src/Main.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio16/src/Questao16.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio18/Exercicio18.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio18/src/Main.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio18/src/Questao18.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio23/Exercicio23.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio23/src/Main.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio23/src/Questao23.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio25/Exercicio25.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio25/src/Main.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio25/src/Quetao25.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio26/Exercicio26.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio26/src/Main.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio26/src/Quetao26.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio27/Exercicio27.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio27/src/Main.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio27/src/Quetao27.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio31/Exercicio31.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio31/src/Main.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio31/src/Questao31.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio40/Exercicio40.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio40/src/Main.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio40/src/Questao40.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio41/Exercicio41.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio41/src/Main.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio41/src/Questao41.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio42/Exercicio42.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio42/src/Main.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio42/src/Questao42.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio43/Exercicio43.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio43/src/Main.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio43/src/Questao43.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio44/Exercicio44.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio44/src/Main.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio44/src/Questao44.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio46/Exercicio46.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio46/src/Main.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio46/src/Questao46.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio48/Exercicio48.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio48/src/Main.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Exercicio48/src/Questao48.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Lista1.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
++    </list>
++    <option name="SHOW_DIALOG" value="false" />
++    <option name="HIGHLIGHT_CONFLICTS" value="true" />
++    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++    <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="Class" />
++      </list>
++    </option>
++  </component>
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
++  </component>
++  <component name="ProjectId" id="2Lm2IBl1xOIl20lCpUwVSkzXezb" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
++  <component name="ProjectViewState">
++    <option name="hideEmptyMiddlePackages" value="true" />
++    <option name="showLibraryContents" value="true" />
++  </component>
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Curso Java&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
++  }
++}</component>
++  <component name="RecentsManager">
++    <key name="CopyFile.RECENT_KEYS">
++      <recent name="C:\Curso Java" />
++    </key>
++  </component>
++  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
++  <component name="TaskManager">
++    <task active="true" id="Default" summary="Default task">
++      <changelist id="3f90158a-4084-420d-afcb-489a75e82011" name="Changes" comment="" />
++      <created>1676461862666</created>
++      <option name="number" value="Default" />
++      <option name="presentableId" value="Default" />
++      <updated>1676461862666</updated>
++      <workItem from="1676461863484" duration="15930000" />
++      <workItem from="1676570227957" duration="13000" />
++      <workItem from="1676570264953" duration="29000" />
++      <workItem from="1676639530148" duration="638000" />
++    </task>
++    <servers />
++  </component>
++  <component name="TypeScriptGeneratedFilesManager">
++    <option name="version" value="3" />
++  </component>
++</project>
+\ No newline at end of file
+Index: Lista1/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/.idea/vcs.xml b/Lista1/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1676461868892)
++++ b/Lista1/.idea/vcs.xml	(date 1676461868892)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: Lista3/Atividade-03/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Atividade-03/.gitignore b/Lista3/Atividade-03/.gitignore
+new file mode 100644
+--- /dev/null	(date 1680307062000)
++++ b/Lista3/Atividade-03/.gitignore	(date 1680307062000)
+@@ -0,0 +1,24 @@
++# Compiled class file
++*.class
++
++# Log file
++*.log
++
++# BlueJ files
++*.ctxt
++
++# Mobile Tools for Java (J2ME)
++.mtj.tmp/
++
++# Package Files #
++*.jar
++*.war
++*.nar
++*.ear
++*.zip
++*.tar.gz
++*.rar
++
++# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
++hs_err_pid*
++replay_pid*
+Index: Lista3/Atividade-03/.gitattributes
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Atividade-03/.gitattributes b/Lista3/Atividade-03/.gitattributes
+new file mode 100644
+--- /dev/null	(date 1680307062000)
++++ b/Lista3/Atividade-03/.gitattributes	(date 1680307062000)
+@@ -0,0 +1,2 @@
++# Auto detect text files and perform LF normalization
++* text=auto
+Index: Lista1/Exercicio11/Exercicio11.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio11/Exercicio11.iml b/Lista1/Exercicio11/Exercicio11.iml
+new file mode 100644
+--- /dev/null	(date 1676463606982)
++++ b/Lista1/Exercicio11/Exercicio11.iml	(date 1676463606982)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista1/Exercicio12/Exercicio112.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio12/Exercicio112.iml b/Lista1/Exercicio12/Exercicio112.iml
+new file mode 100644
+--- /dev/null	(date 1676463606952)
++++ b/Lista1/Exercicio12/Exercicio112.iml	(date 1676463606952)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista3/Algoritmo 481/Algoritmo 481/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 481/Algoritmo 481/src/Main.java b/Lista3/Algoritmo 481/Algoritmo 481/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1680289110000)
++++ b/Lista3/Algoritmo 481/Algoritmo 481/src/Main.java	(date 1680289110000)
+@@ -0,0 +1,27 @@
++import java.util.Scanner;
++
++public class Main {
++    public static void main(String[] args) {
++        int num, base, c;
++        Scanner sc = new Scanner(System.in);
++
++        System.out.print("Digite um número maior ou igual a 0: ");
++        num = sc.nextInt();
++        while (num < 0) {
++            System.out.print("Número negativo. Digite um número maior ou igual a 0: ");
++            num = sc.nextInt();
++        }
++
++        System.out.print("Digite a base em que deseja representá-lo (2-10): ");
++        base = sc.nextInt();
++        while (base < 2 || base > 10) {
++            System.out.print("Não sei converter. Digite a base em que deseja representá-lo (2-10): ");
++            base = sc.nextInt();
++        }
++
++        c = Algoritmo481.converte(num, base);
++
++        System.out.println("Número em decimal: " + num);
++        System.out.println("Número na base " + base + ": " + c);
++    }
++}
+Index: Lista3/Algoritmo 481/Algoritmo 481/src/Algoritmo481.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 481/Algoritmo 481/src/Algoritmo481.java b/Lista3/Algoritmo 481/Algoritmo 481/src/Algoritmo481.java
+new file mode 100644
+--- /dev/null	(date 1680289076000)
++++ b/Lista3/Algoritmo 481/Algoritmo 481/src/Algoritmo481.java	(date 1680289076000)
+@@ -0,0 +1,17 @@
++public class Algoritmo481 {
++
++    public static int converte(int nnum, int nbase) {
++        int nb = 0, r, b = 0;
++
++        while (nnum >= nbase) {
++            r = nnum % nbase;
++            nb += Math.pow(10, b) * r;
++            nnum = nnum / nbase;
++            b++;
++        }
++
++        nb += Math.pow(10, b) * nnum;
++
++        return nb;
++    }
++}
+Index: Lista3/Algoritmo 481/Algoritmo 481/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 481/Algoritmo 481/.gitignore b/Lista3/Algoritmo 481/Algoritmo 481/.gitignore
+new file mode 100644
+--- /dev/null	(date 1680289016000)
++++ b/Lista3/Algoritmo 481/Algoritmo 481/.gitignore	(date 1680289016000)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: Lista3/Algoritmo 481/Algoritmo 481/Algoritmo 481.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritmo 481/Algoritmo 481/Algoritmo 481.iml b/Lista3/Algoritmo 481/Algoritmo 481/Algoritmo 481.iml
+new file mode 100644
+--- /dev/null	(date 1680289018000)
++++ b/Lista3/Algoritmo 481/Algoritmo 481/Algoritmo 481.iml	(date 1680289018000)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista1/Exercicio16/Exercicio16.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio16/Exercicio16.iml b/Lista1/Exercicio16/Exercicio16.iml
+new file mode 100644
+--- /dev/null	(date 1676463607034)
++++ b/Lista1/Exercicio16/Exercicio16.iml	(date 1676463607034)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista1/Exercicio18/Exercicio18.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio18/Exercicio18.iml b/Lista1/Exercicio18/Exercicio18.iml
+new file mode 100644
+--- /dev/null	(date 1676463607095)
++++ b/Lista1/Exercicio18/Exercicio18.iml	(date 1676463607095)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista1/Exercicio23/Exercicio23.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio23/Exercicio23.iml b/Lista1/Exercicio23/Exercicio23.iml
+new file mode 100644
+--- /dev/null	(date 1676463638992)
++++ b/Lista1/Exercicio23/Exercicio23.iml	(date 1676463638992)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista3/Algoritimo 462/Algoritmo462/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritimo 462/Algoritmo462/src/Main.java b/Lista3/Algoritimo 462/Algoritmo462/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1680287152000)
++++ b/Lista3/Algoritimo 462/Algoritmo462/src/Main.java	(date 1680287152000)
+@@ -0,0 +1,23 @@
++import java.util.Scanner;
++
++public class Main {
++    public static void main(String[] args) {
++        double n1, n2, n3, m;
++        Scanner sc = new Scanner(System.in);
++
++        System.out.println("\ndigite nota 1: ");
++        n1 = sc.nextDouble();
++
++        System.out.println("\ndigite nota 2: ");
++        n2 = sc.nextDouble();
++
++        System.out.println("\ndigite nota 3: ");
++        n3 = sc.nextDouble();
++
++        m = Algoritmo462.media(n1, n2, n3);
++        System.out.println("\nmedia aritimetica e " + m );
++        System.out.println("\nmedia armazenada em variavavel " + m);
++        System.out.println("\n");
++
++    }
++}
+\ No newline at end of file
+Index: Lista3/Algoritimo 462/Algoritmo462/src/Algoritmo462.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritimo 462/Algoritmo462/src/Algoritmo462.java b/Lista3/Algoritimo 462/Algoritmo462/src/Algoritmo462.java
+new file mode 100644
+--- /dev/null	(date 1680287152000)
++++ b/Lista3/Algoritimo 462/Algoritmo462/src/Algoritmo462.java	(date 1680287152000)
+@@ -0,0 +1,8 @@
++public class Algoritmo462 {
++    public static double media (double x, double y, double z){
++        double ma = (x + y + z ) / 3;
++        return  ma;
++    }
++
++
++}
+Index: Lista3/Algoritimo 462/Algoritmo462/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritimo 462/Algoritmo462/.gitignore b/Lista3/Algoritimo 462/Algoritmo462/.gitignore
+new file mode 100644
+--- /dev/null	(date 1680287038000)
++++ b/Lista3/Algoritimo 462/Algoritmo462/.gitignore	(date 1680287038000)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: Lista1/Exercicio25/Exercicio25.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio25/Exercicio25.iml b/Lista1/Exercicio25/Exercicio25.iml
+new file mode 100644
+--- /dev/null	(date 1676463639009)
++++ b/Lista1/Exercicio25/Exercicio25.iml	(date 1676463639009)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista3/Algoritimo 462/Algoritmo462/Algoritmo462.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista3/Algoritimo 462/Algoritmo462/Algoritmo462.iml b/Lista3/Algoritimo 462/Algoritmo462/Algoritmo462.iml
+new file mode 100644
+--- /dev/null	(date 1680287040000)
++++ b/Lista3/Algoritimo 462/Algoritmo462/Algoritmo462.iml	(date 1680287040000)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: Lista1/Exercicio26/Exercicio26.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Lista1/Exercicio26/Exercicio26.iml b/Lista1/Exercicio26/Exercicio26.iml
+new file mode 100644
+--- /dev/null	(date 1676463673046)
++++ b/Lista1/Exercicio26/Exercicio26.iml	(date 1676463673046)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
