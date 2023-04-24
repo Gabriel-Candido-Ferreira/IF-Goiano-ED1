@@ -4,7 +4,88 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b625a84-56c5-46b2-b178-a6dc75016233" name="Changes" comment="" />
+    <list default="true" id="8b625a84-56c5-46b2-b178-a6dc75016233" name="Changes" comment="add Activity 11">
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritimo 462/Algoritmo462/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritimo 462/Algoritmo462/src/Algoritmo462.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritimo 462/Algoritmo462/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritimo 465/Algoritimo 465/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritimo 465/Algoritimo 465/src/Algoritimo465.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritimo 465/Algoritimo 465/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritimo 470/Algoritimo 470/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritimo 470/Algoritimo 470/src/Algoritimo470.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritimo 470/Algoritimo 470/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritimo 471/Algoritimo 471/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritimo 471/Algoritimo 471/src/Algoritmo471.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritimo 471/Algoritimo 471/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritimo467/Algoritimo 467/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritimo467/Algoritimo 467/src/Algoritimo467.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritimo467/Algoritimo 467/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 460/untitled/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 460/untitled/src/Algoritmo460.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 460/untitled/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 463/Algoritmo463/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 463/Algoritmo463/src/Algoritimo463.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 463/Algoritmo463/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 464/untitled/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 464/untitled/src/Algoritmo464.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 464/untitled/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 473/Algoritmo 473/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 473/Algoritmo 473/src/Algoritmo473.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 473/Algoritmo 473/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 480/Algoritmo 480/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 480/Algoritmo 480/src/Algoritmo480.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 480/Algoritmo 480/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 481/Algoritmo 481/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 481/Algoritmo 481/src/Algoritmo481.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 481/Algoritmo 481/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 483/Algoritmo 483/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 483/Algoritmo 483/src/Algoritmo483.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 483/Algoritmo 483/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 485/Algoritmo 485/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 485/Algoritmo 485/src/Algoritmo485.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 485/Algoritmo 485/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 487/Algoritmo487/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 487/Algoritmo487/src/Algoritmo487.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 487/Algoritmo487/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 490/Algoritmo 490/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 490/Algoritmo 490/src/Algoritmo490.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 490/Algoritmo 490/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 493/Algoritmo493/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 493/Algoritmo493/src/Algoritmo493.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 493/Algoritmo493/src/BuscaL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 493/Algoritmo493/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 493/Algoritmo493/src/VerificaOrdem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 494/Algoritmo 494/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 494/Algoritmo 494/src/Algoritmo494.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 494/Algoritmo 494/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 495/Algoritmo 495/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 495/Algoritmo 495/src/Algoritmo495.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 495/Algoritmo 495/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 497/Algoritmo 497/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 497/Algoritmo 497/src/Algoritmo497.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 497/Algoritmo 497/src/Busca.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 497/Algoritmo 497/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 499/Algoritmo 499/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 499/Algoritmo 499/src/Algoritmo499.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 499/Algoritmo 499/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 499/Algoritmo 499/src/imprime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista1/Algoritmo 499/Algoritmo 499/src/ordena.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pilha/ListaDeExerciciosPilha/Exercicio2/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pilha/ListaDeExerciciosPilha/Exercicio3/src/Aviao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pilha/ListaDeExerciciosPilha/Exercicio3/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pilha/ListaDeExerciciosPilha/Exercicio4/src/FilaInvertida.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pilha/ListaDeExerciciosPilha/Exercicio4/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pilha/ListaDeExerciciosPilha/Exercicio5/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pilha/ListaDeExerciciosPilha/Exercicio6/src/FilaPilha.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pilha/ListaDeExerciciosPilha/Exercicio6/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pilha/ListaDeExerciciosPilha/Exercicio7/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pilha/ListaDeExerciciosPilha/Exercicio8/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pilha/ListaDeExerciciosPilha/Exercicio8/src/Pilha.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pilha/ListaDeExerciciosPilha/Exercico1/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pilha/ListaDeExerciciosPilha/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_03_2023_22_43__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_03_2023_22_43__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,24 +99,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Curso Java/IF_Goiano_ED1/Lista3&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Users/Gabriel/src/IF_Goiano_ED/Lista1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Gabriel\src\IF_Goiano_ED\Lista1" />
+      <recent name="C:\Users\Gabriel\src\IF_Goiano_ED\Pilha" />
+      <recent name="C:\Users\Gabriel\src\IF_Goiano_ED" />
       <recent name="C:\Curso Java\IF_Goiano_ED1\Lista3" />
       <recent name="C:\Curso Java\IF_Goiano_ED1" />
     </key>
@@ -71,6 +154,7 @@
       <workItem from="1680313879330" duration="660000" />
       <workItem from="1680551553633" duration="620000" />
       <workItem from="1682297538332" duration="700000" />
+      <workItem from="1682334362069" duration="2745000" />
     </task>
     <task id="LOCAL-00001" summary="add Activity 11">
       <created>1680313542985</created>
@@ -86,13 +170,46 @@
       <option name="project" value="LOCAL" />
       <updated>1682297633005</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add Activity 11">
+      <created>1682334547573</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682334547573</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix">
+      <created>1682334653831</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682334653831</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add Activity 11">
+      <created>1682337387677</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682337387677</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix" />
     <MESSAGE value="add Activity 11" />
     <option name="LAST_COMMIT_MESSAGE" value="add Activity 11" />
   </component>
