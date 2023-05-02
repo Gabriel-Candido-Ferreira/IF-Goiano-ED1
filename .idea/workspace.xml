@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b625a84-56c5-46b2-b178-a6dc75016233" name="Changes" comment="add Activity 11">
+    <list default="true" id="8b625a84-56c5-46b2-b178-a6dc75016233" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +27,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/Gabriel/src/IF_Goiano_ED/Pilha/Problema de Josephus",
+    "last_opened_file_path": "C:/Users/Gabriel/src/IF_Goiano_ED/Pilha",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -40,9 +40,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Gabriel\src\IF_Goiano_ED\Pilha" />
       <recent name="C:\Users\Gabriel\src\IF_Goiano_ED\Pilha\Problema de Josephus" />
       <recent name="C:\Users\Gabriel\src\IF_Goiano_ED\Lista1" />
-      <recent name="C:\Users\Gabriel\src\IF_Goiano_ED\Pilha" />
       <recent name="C:\Users\Gabriel\src\IF_Goiano_ED" />
       <recent name="C:\Curso Java\IF_Goiano_ED1\Lista3" />
     </key>
@@ -80,6 +80,7 @@
       <workItem from="1682297538332" duration="700000" />
       <workItem from="1682334362069" duration="2745000" />
       <workItem from="1682342244040" duration="5249000" />
+      <workItem from="1682993130755" duration="688000" />
     </task>
     <task id="LOCAL-00001" summary="add Activity 11">
       <created>1680313542985</created>
@@ -123,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682464306611</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add Activity 11">
+      <created>1682993189043</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1682993189043</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
