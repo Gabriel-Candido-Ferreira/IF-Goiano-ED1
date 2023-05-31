@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b625a84-56c5-46b2-b178-a6dc75016233" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Pilha/Expressoes/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pilha/Expressoes/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pilha/Expressoes/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pilha/Expressoes/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pilha/Expressoes/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pilha/Expressoes/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pilha/Expressoes/src/VerificadorExpressao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8b625a84-56c5-46b2-b178-a6dc75016233" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,7 +82,7 @@
       <workItem from="1683672869269" duration="302000" />
       <workItem from="1683736655563" duration="58000" />
       <workItem from="1684800888220" duration="1134000" />
-      <workItem from="1684885417056" duration="497000" />
+      <workItem from="1684885417056" duration="1170000" />
     </task>
     <task id="LOCAL-00001" summary="add Activity 11">
       <created>1680313542985</created>
@@ -163,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684801424319</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add Activity 11">
+      <created>1684887059341</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684887059341</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
